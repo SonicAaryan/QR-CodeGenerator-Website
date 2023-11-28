@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +26,7 @@ https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example
 
         function generateQR() {
             if (qrText.value.length > 0) {
-                qrImage.src = " https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
+                qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
                 // Passed Value to API from qrText and this URL will be Displayed in <img> tag
                 imgBox.classList.add("show-img");
             } else {
